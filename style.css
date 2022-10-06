@@ -22,6 +22,7 @@ h4{
 }
 body{
     color: #F9F9F9;
+    background-color: black;
     
  
 }
@@ -159,9 +160,23 @@ display: flex;
     display: flex;
     height: 70vh;
     justify-content: center;
+    /* background-color:#010f12; */
+}
+
+/* .imageschihi:hover  {
+    animation:escureceTela 3s linear ;
 }
 
 
+@keyframes escureceTela {
+    0%{
+       opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+    
+} */
 
 
 @media (min-width:1600px) {

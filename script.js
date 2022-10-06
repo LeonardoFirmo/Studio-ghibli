@@ -23,18 +23,43 @@ bt2.addEventListener('mousemove',()=>{
     })
 })
 
+let cor1 = 628575
+let cor2 = 134855
+
 
 img.addEventListener('mousemove',()=>{
+    main.style.background ='linear-gradient(130.02deg, #628575 0.66%, #134855 83.32%)'
+ 
 
-    main.style.background = 'black'
+
+    
+   let escurece= setInterval(() => {
+        if(cor1 > 600000){
+            cor1=134855
+        }
+
+        cor1--
+        cor2--
+        console.log('cor sendo alterada');
+        main.style.background =`linear-gradient(130.02deg, #${cor1} 0.66%, #${cor2} 83.32%)`
+        console.log(cor1,cor2);
+        if(cor1 < 99000 || cor2 < 99000){
+            clearInterval(escurece)
+        }
+       
+    }, 10);
+    
+   
 
     img.addEventListener('mouseout',()=>{
         main.style.background='' 
+        cor1 = 628575
+        cor2 = 134855
+        clearInterval(escurece)
     })
 
 
 })
-
 
 
 
